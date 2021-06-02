@@ -1,0 +1,108 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Changing the styling with user input</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="../favicons/CKD.png" type="image/x-icon">
+    </head>
+    <body>
+    <h1>Changing Background;Text Color and Font Size</h1>
+    <h2>How to use this page</h2>
+    <ol>
+        <li> Enter Background Color in the Input Field Below</li>
+        <li> Enter a Text Color in the Input Field Below</li>
+        <li>Enter Font Size from 10 - 100px; use the abbreviation "px" after number value</li>
+    </ol>
+    <hr style="border-bottom: 2px solid black">
+    <label for="" style="margin:15px">Background Color</label>
+    <div style="margin:10px">
+        <input type="text" class="js-bg-color">
+    </div>
+    <label for="" style="margin:15px">Text Color</label>
+    <div style="margin:10px">
+        <input type="text" class="js-text-color";>
+    </div>
+    <label for="" style="margin:15px">Font-Size</label>
+    <div style="margin:10px">
+        <input type="text" class="js-font-size" >
+    </div>
+
+    <script>
+    var bgColor = document.querySelector(".js-bg-color");
+    var textColor = document.querySelector(".js-text-color");
+    var fontSize = document.querySelector(".js-font-size");
+    var body = document.querySelector("body")
+    bgColor.addEventListener('keyup', function(event)
+    {
+        var color = event.target.value;
+        console.log(event.target.value);
+        switch(color)
+        {   
+        case 'green':
+        case 'gray':
+        case 'blue':
+        case 'yellow':
+        case 'orange':
+        case 'springgreen':
+        case 'crimson':
+        case 'redorange':
+        case 'gainsboro':
+        case 'white':
+        case 'purple':
+            body.style.backgroundColor = color
+                break
+                default:
+                body.style.backgroundColor = "gainsboro"
+                    break        
+            }})
+
+    textColor.addEventListener('keydown', function(event){
+        var color = event.target.value;
+        console.log(event.target.value);
+        switch(color){
+            case 'green':
+            case 'gray':
+            case 'blue':
+            case 'yellow':
+            case 'orange':
+            case 'springgreen':
+            case 'crimson':
+            case 'redorange':
+            case 'gainsboro':
+            case 'white':
+            case 'purple':
+            body.style.color = color
+                break
+            default:
+                body.style.color = "brown"
+                    break
+            }})
+
+    fontSize.addEventListener('keyup', function(event){
+        var fontsize = event.target.value;
+        console.log(event.target.value);
+        switch(fontsize){
+            case '10px':
+            case '20px':
+            case '30px':
+            case '40px':
+            case '50px': 
+            case '60px':
+            case '70px':
+            case '80px':
+            case '90px':
+            case '100px':
+            body.style.fontSize = fontsize;
+                break
+            default:
+                body.style.fontSize = "18px";
+                    break
+            }})
+    </script>
+    </body>
+    </html>

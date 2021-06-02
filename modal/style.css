@@ -1,0 +1,76 @@
+ .js-open{
+    font-size: 22px;
+    line-height: 44px;
+    background-color: #cc4331;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 25px 5px 25px;
+    outline: 0;
+    box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgbda(0,0,0, 0.4);
+    transition: all 0.15s ease-in-out;
+    margin-top: -4px;
+    }
+
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.js-open:hover{
+    border:2px solid black;
+    background-color: #d25544;
+    box-shadow: 0 4px 0 #c4402f, 0 5px 5px 1px rgbda(0,0,0, 0.4);
+}
+.js-open:active{
+    margin-top: 0;
+    box-shadow:none;
+}
+html,body {
+    padding:0;
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    background-image:url(Vulture.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+   }
+
+   .modal { position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 10px solid black;
+    box-shadow: 5px 5px #000;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    display:none;
+    z-index: 10;
+    background-color:pink}
+
+    .js-close, .js-accept{
+        font-family: cursive;
+        color: black;
+        line-height: 44px;
+        background-color: #999;
+        border-radius: 4px;
+        padding: 5px 25px 5px 25px;
+        outline: 0;
+        box-shadow: 0 4px 0 #af3a2a, 0 5px 5px 1px rgbda(0,0,0, 0.4);
+        transition: all 0.15s ease-in-out;
+        margin-top: -4px;
+        }
+    
+    .js-close:hover, .js-accept:hover{
+    border:2px solid black;
+    background-color: rgba(0,0,0,0.6);
+    color: ghostwhite;
+    box-shadow: 0 4px 0 #c4402f, 0 5px 5px 1px rgbda(0,0,0, 0.4);
+    }
+    
