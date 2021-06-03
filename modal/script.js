@@ -28,4 +28,5 @@ closeBtn.addEventListener("click", function(event){
 })
 acceptBtn.addEventListener("click", function(event){
   modal.accept()
+  alert("Please accept the terms and conditions?")
 })

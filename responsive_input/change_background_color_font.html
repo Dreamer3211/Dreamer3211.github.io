@@ -10,10 +10,17 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="../favicons/CKD.png" type="image/x-icon">
     </head>
+    <style>
+        .b {
+            margin: 10px;
+            text-overflow: clip;
+            text-align: justify;
+        }
+    </style>
     <body>
-    <h1>Changing Background;Text Color and Font Size</h1>
-    <h2>How to use this page</h2>
-    <ol>
+    <h1 class="b">Changing Background;Text Color and Font Size</h1>
+    <h2 class="b">How to use this page</h2>
+    <ol style="margin: 5px;">
         <li> Enter Background Color in the Input Field Below</li>
         <li> Enter a Text Color in the Input Field Below</li>
         <li>Enter Font Size from 10 - 100px; use the abbreviation "px" after number value</li>
@@ -57,7 +64,7 @@
             body.style.backgroundColor = color
                 break
                 default:
-                body.style.backgroundColor = "gainsboro"
+                body.style.backgroundColor = "ghostwhite"
                     break        
             }})
 
@@ -79,7 +86,7 @@
             body.style.color = color
                 break
             default:
-                body.style.color = "brown"
+                body.style.color = "grey"
                     break
             }})
 
@@ -100,7 +107,7 @@
             body.style.fontSize = fontsize;
                 break
             default:
-                body.style.fontSize = "18px";
+                body.style.fontSize = "15px";
                     break
             }})
     </script>
