@@ -567,7 +567,9 @@ progress {
 .blockquote-footer::before {
   content: "— ";
 }
-
+.b{
+  background-size: cover;
+}
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -4001,7 +4003,7 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #000,#495057,;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }

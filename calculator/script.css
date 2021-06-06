@@ -79,3 +79,15 @@
         position: relative;
         z-index: -1;
         }
+
+    .button{color: #000;
+        font-size: 0.75rem;
+        text-align: left;;
+        top: 4px;
+        right: 5px;
+        font-family: 'Share', cursive;
+        position: relative;
+        z-index: -1;
+        }
+
+    }
